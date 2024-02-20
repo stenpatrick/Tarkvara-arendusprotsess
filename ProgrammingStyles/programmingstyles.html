@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmeerimisstiilid</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="flex flex-col gap-4 text-center">
+    <a href="../" class="back">Mine tagasi</a>
+    <header>
+        <h1 class="text-4xl">Programeerimisstiilid</h1>
+    </header>
+    <main class="w-1/2 self-center flex flex-col gap-8 text-wrap">
+        <h2 class="text-xl">Behavior-driven development</h2>
+        <p>
+            Behaviour-driven development ehk käitumispõhine arendus on tarkvaraarendus metoodika, mis julgustab tarkvaraprojekti arendajate, kvaliteeditagamise ekspertide ja klientide esindajate vahelist koostööd. See julgustab meeskondi kasutama vestlust ja konkreetseid näiteid, et vormistada ühine arusaam sellest, kuidas rakendus peaks käituma.
+        </p>
+        <h2 class="text-xl">Design-driven development</h2>
+        <p>
+            Disainipõhine arendus seab esikohale kasutajakogemuse, muutes disaini järelmõtetest toote loomisel juhtivaks jõuks
+            <h3 class="text-xl">Etapid:</h3>
+            <ol class="list-decimal text-left self-center">
+                <li>Kasutaja uurimus</li>
+                <li>Nõudmiste kogumine</li>
+                <li>Disaini ja ideede faas</li>
+                <li>Prototüüpimis ja kasutaja testimise disain</li>
+                <li>Disaini ja arendamise tööde jagamine</li>
+                <li>Itereeriv tagasiside tsükkel</li>
+                <li>Algatamine ja itereerimine (lõppfaas)</li>
+            </ol>
+        </p>
+        <h2 class="text-xl">Domain-driven design</h2>
+        <p>
+            Domeenipõhine disain (DDD) on peamine tarkvara kujundamise lähenemisviis, mis keskendub tarkvara modelleerimisele, et see sobiks domeeniga vastavalt selle domeeni ekspertide sisendile.
+
+            Domeenipõhise disaini korral peaks tarkvarakoodi struktuur ja keel (klassinimed, klassimeetodid, klassimuutujad) ühtima ärivaldkonnaga. Näiteks: kui tarkvara töötleb laenutaotlusi, võivad sellel olla sellised klassid nagu "laenutaotlus", "kliendid" ja sellised meetodid nagu "aksepteeri pakkumine" ja "taganemine".
+
+            Domeenipõhine disain põhineb järgmistel eesmärkidel.
+
+            projekti põhifookuse asetamine põhidomeenile ja domeeniloogikale;
+            keerukate kujunduste rajamine domeeni mudelile;
+            loova koostöö algatamine tehniliste ja domeeniekspertide vahel, et iteratiivselt viimistleda kontseptuaalset mudelit, mis käsitleb konkreetseid domeeniprobleeme.
+        </p>
+        <h2 class="text-xl">Secure by design</h2>
+        <p>
+            Secure by design ehk disainiliselt turvaline tähendab tarkvaratehnikas, et tarkvaratooted ja võimalused on loodud põhimõtteliselt turvaliseks.
+
+            Alternatiivseid turbestrateegiaid, taktikaid ja mustreid arvestatakse tarkvara kavandamise alguses ning parimad valib ja jõustab arhitektuur ning neid kasutatakse arendajate juhtpõhimõtetena. 
+            Samuti soovitatakse kasutada strateegilisi disainimustreid, millel on turvalisusele kasulik mõju, kuigi need kujundusmustrid ei olnud algselt välja töötatud turvalisust silmas pidades.
+        </p>
+        <h2 class="text-xl">Test-driven development</h2>
+        <p>
+            Test Driven Development (TDD) on tarkvaraarendusviis, kus testid kirjutatakse enne tegelikku koodi. Sellel on mitmeid eeliseid: Põhjalik testi katvus: TDD tagab, et kogu uus kood on kaetud vähemalt ühe testiga, mis toob kaasa tugevama tarkvara.
+        </p>
+        <h2 class="text-xl">Acceptance test-driven development</h2>
+        <p>
+            TDD julgustab kirjutama testitavat, lõdvalt seotud koodi, mis kipub olema modulaarsem. Kuna hästi struktureeritud modulaarset koodi on lihtsam kirjutada, siluda, mõista, hooldada ja taaskasutada, aitab TDD:
+
+            <ul class="list-disc mr-5">
+                <li>Vähendab kulusid</li>
+                <li>Muutke ümbertegemine ja ümberkirjutamine lihtsamaks ja kiiremaks ("muutke see tööle" punaste ja roheliste etappidega, seejärel muutke uuesti "et õigeks teha")</li>
+                <li>Muutke projektiga liitumine sujuvamaks</li>
+                <li>Vältige vigu ja sidumist</li>
+                <li>Parandage üldist meeskonna koostööd</li>
+                <li>Suurendage kindlustunnet, et kood töötab ootuspäraselt</li>
+                <li>Parandage koodimustreid</li>
+                <li>Kõrvaldage hirm muutuste ees</li>
+            </ul>
+        </p>
+        <h2 class="text-xl">Continuous test-driven development</h2>
+        <p>
+            Pidev testipõhine arendus (CTDD) on tarkvaraarenduse tava, mis laiendab testipõhist arendust (TDD) taustal automaatse testimise abil, mida mõnikord nimetatakse pidevaks testimiseks.
+        </p>
+        <h2 class="text-xl">Specification by example</h2>
+        <p>
+            Specification by example ehk näidiste järgi spetsifikatsioon on koostööpõhine lähenemine tarkvaratoodete nõuete ja ärile suunatud funktsionaalsete testide määratlemiseks, mis põhineb nõuete hõivamisel ja illustreerimisel, kasutades abstraktsete väidete asemel realistlikke näiteid. Seda rakendatakse agiilsete tarkvaraarendusmeetodite kontekstis, eriti käitumispõhise arenduse kontekstis. See lähenemisviis on eriti edukas nõuete ja funktsionaalsete testide haldamisel suuremahulistes projektides, mille valdkond ja organisatsiooniline keerukus on oluline.
+        </p>
+        <h2 class="text-xl">Data-driven development</h2>
+        <p>
+            Data-driven development ehk andmepõhine arendus on protsess, kus andmed on disaini- ja arendusotsuste peamiseks tõukejõuks. See on muutunud üha populaarsemaks tarkvara arendamise viisiks, kuna ettevõtted on mõistnud andmepõhise otsuste tegemise eeliseid. Selles blogipostituses defineerime andmepõhise arenduse, selgitame selle eeliseid ja anname näpunäiteid, kuidas sellest maksimumi võtta.
+        </p>
+        <h2 class="text-xl">Data-oriented design</h2>
+        <p>
+            Data-oriented design ehk andmetele orienteeritud disain on tarkvara kujundamise lähenemisviis, mis keskendub andmete korraldamisele viisil, mis muudab nendele juurdepääsu ja nendega manipuleerimise lihtsaks. See põhineb ideel, et programmi põhirõhk peaksid olema andmetel, mitte nende andmetega tehtavatel toimingutel või teisendustel.
+        </p>
+    </main>
+</body>
+</html>

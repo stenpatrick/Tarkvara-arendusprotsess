@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body class="bg-gray-200 font-sans">
+    <div class="container mx-auto py-8">
+        <h1 id="whiteoutline" style="color: white; font-family: 'Comic Sans MS';">Unified Modeling Language (UML)</h1>
+        <hr class="border-blue-500 mb-8">
+        <main class="w-1/2 flex flex-col gap-8 text-wrap">
+            <div class="p-4 bg-white shadow-md rounded">
+
+            <p>
+                <a id="textcolor">
+                The Unified Modeling Language, abbreviated as UML, also known as Unified Modeling Language, UML language, unified modeling language, unified visualization language is a general-purpose notation language for specifying and visualizing complex software, mainly for large object-oriented projects. <br/><br/>
+            </p>
+            <p id="textcolor">
+                <a id="textcolor">
+                UML diagrams fall into two subcategories: structural diagrams and behavioral diagrams.
+
+                Structural diagrams depict the components that make up the system and the relationships between those components. These diagrams depict the static aspects of a system.
+
+                Behavioral diagrams depict what happens inside the system. They show how all components interact with each other and with other systems or users.
+            </p>
+            <li><a id="textcolor"><b>Structural Diagrams</b><br/></li>
+            <p class="whitespace-pre-line">
+                <li><a id="textcolor"><b>Class Diagram</b><br/></li>
+                <a id="textcolor">
+                The UML class diagram is the basic building block of any object-oriented solution. It represents a static object-oriented system, defining projects based on classes, attributes, and functions. In other words, it shows the classes of the system and their operations. Both software engineers and business managers use it to model various interactions in the process.
+                
+                The diagram represents a class with a rectangle. Each rectangle is divided vertically into three parts. The top part contains the class name, while the second and third sections contain details about the class's operations, behavior, and attributes.
+                
+                You can easily create these diagrams using a UML class diagram tool.
+                <li><a id="textcolor"><b>Package Diagram</b><br/></li>
+                <a id="textcolor">
+                As the name suggests, a package diagram shows dependencies and relationships between packages in the system. A package refers to anything that organizes any model element. In the diagram itself, it is represented as a folder.
+                
+                The package diagram allows users to group items into folders. Units that can be grouped include classes, use cases, documents, diagrams, and even other packages. Once each unit is separated into a package, all packages are arranged and ordered hierarchically in the diagram.
+                
+                Because they easily depict high-level structure, package diagrams are mostly useful for visualizing software systems.
+                <li><a id="textcolor"><b>Object Diagram</b><br/></li>
+                <a id="textcolor">
+                Object diagrams show the attributes of different objects in the system. Like class diagrams, they show relationships between objects in software. The difference is that object diagrams use real-world examples. Object diagrams are also called instance diagrams because they show what the system looks like at a specific point in time.
+                <li><a id="textcolor"><b>Component Diagram</b><br/></li>
+                <a id="textcolor">
+                A UML component diagram divides a complex system into smaller components, making visualization easier. Unlike other UML diagrams, it specifically describes the relationships between these components.
+                
+                UML component diagrams provide developers with a general overview of the physical objects of the system. This type of UML diagram also shows the structural relationship between each physical component and subcomponent in a complex software system. It helps stakeholders understand how components are organized and interconnected.
+                
+                Creating these diagrams is easy with user-friendly UML component diagram tools.
+                <li><a id="textcolor"><b>Composite Structure Diagram</b><br/></li>
+                <a id="textcolor">
+                A deployment diagram shows the configuration of processing nodes and all the components living in them. It represents the physical arrangement of nodes in a distributed system. These diagrams are particularly useful when you are creating software that runs on different hardware systems.
+                
+                System engineers are most likely to use these diagrams as they can monitor their entire hardware network and prepare the system for deployment without issues. It also allows them to see performance, maintainability, and scalability.
+            </p>
+
+            <li><a id="textcolor"><b>Behavioral Diagrams</b><br/></li>
+            <a id="textcolor">
+            <p>
+                <li><a id="textcolor"><b>Activity Diagram</b><br/></li>
+                <a id="textcolor">
+                The UML activity diagram is a flowchart that describes all the activities of a system. It shows everything from start to finish, defining the various decision points and steps that need to happen to move from one activity to another. Steps can be chronological, branched, or concurrent.
+                
+                Using UML activity diagrams, you can refine any component and get a high-level overview of the dynamic aspects of the system. The best way to create these diagrams is to use an intuitive UML activity diagram creator.
+                <li><a id="textcolor"><b>Sequence Diagram</b><br/></li>
+                <a id="textcolor">
+                UML sequence diagrams (sometimes called event diagrams) show the sequence of interactions between your objects. This includes your object's lifelines, the processes interacting with your objects, and the messages exchanged between objects to perform a function.
+                
+                Developers and business professionals often use these diagrams to understand how to build a new system or improve an existing process. You can easily create them using an online UML sequence diagram.
+                <li><a id="textcolor"><b>Communication Diagram</b><br/></li>
+                <a id="textcolor">
+                UML communication diagrams are also called collaboration diagrams. They are relatively similar to sequence diagrams, focusing on the messages transmitted between different objects. While sequence diagrams observe processing over time, communication diagrams create a complete big picture map of your product. A communication diagram tool makes creating these visualizations easy.
+                Interaction Overview Diagram
+                
+                Similar to activity diagrams, interaction overview diagrams visualize the flow of activities and the sequence of those activities. The difference is that in the interaction overview diagram, each activity is depicted as a frame. Nodes in the interaction overview diagram represent interactions in the system.
+                <li><a id="textcolor"><b>Timing Diagram</b><br/></li>
+                <a id="textcolor">
+                Timing diagrams are useful during deployment as they depict the behavior of specific objects over a specific period of time. These diagrams are usually quite simple, but when dealing with more than one object, they show many different and important sequences of interactions during that time.
+                <li><a id="textcolor"><b>Use Case Diagram</b><br/></li>
+                <a id="textcolor">
+                Use case diagrams provide a graphical overview of the actors involved in a software system. By illustrating the functionality of the system and outlining the expected behavior of the system, they help developers analyze the relationships between use cases and actors. You can easily visualize these interactions using a use case diagram tool.
+                <li><a id="textcolor"><b>State Machine Diagram</b><br/></li>
+                <a id="textcolor">
+                UML state machine diagrams, also known as statechart diagrams, show the behavior of various components in the system. You can visualize how elements behave differently depending on the state of the developing program. Easily create state diagrams with the Miro state diagram tool.
+            </p>
+        </main>
+
+        <img class="w-1/2 h-auto" src="https://images.ctfassets.net/w6r2i5d8q73s/6O9tn7x5Bvh7ECEhdEWSJZ/a881b352d2e1d1e9198299ba0c4deb10/diagramming_uml_diagram_product_image_EN_standard_3_2-2.png?fm=webp&q=75">
+    
+    </body>
+</html>
