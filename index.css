@@ -43,3 +43,7 @@ html, body {
 #Waterfall1Text {
     font-weight: bold;
 }
+
+#linkcolor {
+    color: #2c5282; /* Dark blue color */
+}
