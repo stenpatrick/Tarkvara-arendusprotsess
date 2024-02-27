@@ -3,87 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programmeerimisstiilid</title>
+    <title>Programming Styles</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../index.css">
 </head>
-<body class="flex flex-col gap-4 text-center">
-    <a href="../" class="back">Mine tagasi</a>
+<body class="bg-gray-200 font-sans">
+    <div class="container mx-auto py-8">
     <header>
-        <h1 class="text-4xl">Programeerimisstiilid</h1>
+        <h1 id="whiteoutline" style="color: white; font-family: 'Comic Sans MS';">Programming Styles</h1>
     </header>
-    <main class="w-1/2 self-center flex flex-col gap-8 text-wrap">
-        <h2 class="text-xl">Behavior-driven development</h2>
+    <hr class="border-blue-500 mb-8">
+    <main class="w-1/2 flex flex-col gap-8 text-wrap">
+        <div class="p-4 bg-white shadow-md rounded">
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';"><a id="textcolor">Behavior-driven development</a></h2>
         <p>
-            Behaviour-driven development ehk käitumispõhine arendus on tarkvaraarendus metoodika, mis julgustab tarkvaraprojekti arendajate, kvaliteeditagamise ekspertide ja klientide esindajate vahelist koostööd. See julgustab meeskondi kasutama vestlust ja konkreetseid näiteid, et vormistada ühine arusaam sellest, kuidas rakendus peaks käituma.
+            <a id="textcolor">Behavior-driven development, or BDD, is a software development methodology that encourages collaboration between developers, quality assurance experts, and representatives from the business side. It encourages teams to use conversation and concrete examples to formalize a shared understanding of how an application should behave.
         </p>
-        <h2 class="text-xl">Design-driven development</h2>
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Design-driven development</h2>
         <p>
-            Disainipõhine arendus seab esikohale kasutajakogemuse, muutes disaini järelmõtetest toote loomisel juhtivaks jõuks
-            <h3 class="text-xl">Etapid:</h3>
+            Design-driven development prioritizes user experience, making design the driving force behind product creation.
+            <h3 id="textcolor">Stages:</h3>
             <ol class="list-decimal text-left self-center">
-                <li>Kasutaja uurimus</li>
-                <li>Nõudmiste kogumine</li>
-                <li>Disaini ja ideede faas</li>
-                <li>Prototüüpimis ja kasutaja testimise disain</li>
-                <li>Disaini ja arendamise tööde jagamine</li>
-                <li>Itereeriv tagasiside tsükkel</li>
-                <li>Algatamine ja itereerimine (lõppfaas)</li>
+                <li><a id="textcolor">User research<br/></a></li>
+                <li><a id="textcolor">Requirement gathering<br/></a></li>
+                <li><a id="textcolor">Design and ideation phase<br/></a></li>
+                <li><a id="textcolor">Prototype and user testing design<br/></a></li>
+                <li><a id="textcolor">Design and development work distribution<br/></a></li>
+                <li><a id="textcolor">Iterative feedback loop<br/></a></li>
+                <li><a id="textcolor">Initiation and iteration (final phase)<br/></a></li>
             </ol>
         </p>
-        <h2 class="text-xl">Domain-driven design</h2>
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Domain-driven design</h2>
         <p>
-            Domeenipõhine disain (DDD) on peamine tarkvara kujundamise lähenemisviis, mis keskendub tarkvara modelleerimisele, et see sobiks domeeniga vastavalt selle domeeni ekspertide sisendile.
+            <a id="textcolor">
+            Domain-driven design (DDD) is a primary approach to software design that focuses on modeling software to match a domain according to input from domain experts.
 
-            Domeenipõhise disaini korral peaks tarkvarakoodi struktuur ja keel (klassinimed, klassimeetodid, klassimuutujad) ühtima ärivaldkonnaga. Näiteks: kui tarkvara töötleb laenutaotlusi, võivad sellel olla sellised klassid nagu "laenutaotlus", "kliendid" ja sellised meetodid nagu "aksepteeri pakkumine" ja "taganemine".
+            In domain-driven design, the structure and language of the software code (class names, class methods, class variables) should align with the business domain. For example, if the software deals with loan applications, it might have classes such as "loan application," "customers," and methods such as "accept offer" and "withdrawal."
 
-            Domeenipõhine disain põhineb järgmistel eesmärkidel.
+            Domain-driven design is based on the following objectives:
 
-            projekti põhifookuse asetamine põhidomeenile ja domeeniloogikale;
-            keerukate kujunduste rajamine domeeni mudelile;
-            loova koostöö algatamine tehniliste ja domeeniekspertide vahel, et iteratiivselt viimistleda kontseptuaalset mudelit, mis käsitleb konkreetseid domeeniprobleeme.
+            placing the project's main focus on the core domain and domain logic;
+            building complex designs based on the domain model;
+            initiating creative collaboration between technical and domain experts to iteratively refine a conceptual model that addresses specific domain problems.
+           </a>    
         </p>
-        <h2 class="text-xl">Secure by design</h2>
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Secure by design</h2>
         <p>
-            Secure by design ehk disainiliselt turvaline tähendab tarkvaratehnikas, et tarkvaratooted ja võimalused on loodud põhimõtteliselt turvaliseks.
+            <a id="textcolor">
+            Secure by design in software engineering means that software products and features are inherently designed to be secure.
 
-            Alternatiivseid turbestrateegiaid, taktikaid ja mustreid arvestatakse tarkvara kavandamise alguses ning parimad valib ja jõustab arhitektuur ning neid kasutatakse arendajate juhtpõhimõtetena. 
-            Samuti soovitatakse kasutada strateegilisi disainimustreid, millel on turvalisusele kasulik mõju, kuigi need kujundusmustrid ei olnud algselt välja töötatud turvalisust silmas pidades.
+            Alternative security strategies, tactics, and patterns are considered at the beginning of software design, and the best ones are selected and enforced by architecture and used as guiding principles for developers. 
+            It is also recommended to use strategic design patterns that have a beneficial impact on security, even though these design patterns were not originally developed with security in mind.
+            </a>
         </p>
-        <h2 class="text-xl">Test-driven development</h2>
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Test-driven development</h2>
         <p>
-            Test Driven Development (TDD) on tarkvaraarendusviis, kus testid kirjutatakse enne tegelikku koodi. Sellel on mitmeid eeliseid: Põhjalik testi katvus: TDD tagab, et kogu uus kood on kaetud vähemalt ühe testiga, mis toob kaasa tugevama tarkvara.
+            <a id="textcolor">
+            Test Driven Development (TDD) is a software development approach where tests are written before actual code. It has several advantages: Comprehensive test coverage: TDD ensures that all new code is covered by at least one test, resulting in stronger software.
+            </a>
         </p>
-        <h2 class="text-xl">Acceptance test-driven development</h2>
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Acceptance test-driven development</h2>
         <p>
-            TDD julgustab kirjutama testitavat, lõdvalt seotud koodi, mis kipub olema modulaarsem. Kuna hästi struktureeritud modulaarset koodi on lihtsam kirjutada, siluda, mõista, hooldada ja taaskasutada, aitab TDD:
-
+            <a id="textcolor">
+            TDD encourages writing testable, loosely coupled code, which tends to be more modular. As well-structured modular code is easier to write, debug, understand, maintain, and reuse, TDD helps:
+            </a>
             <ul class="list-disc mr-5">
-                <li>Vähendab kulusid</li>
-                <li>Muutke ümbertegemine ja ümberkirjutamine lihtsamaks ja kiiremaks ("muutke see tööle" punaste ja roheliste etappidega, seejärel muutke uuesti "et õigeks teha")</li>
-                <li>Muutke projektiga liitumine sujuvamaks</li>
-                <li>Vältige vigu ja sidumist</li>
-                <li>Parandage üldist meeskonna koostööd</li>
-                <li>Suurendage kindlustunnet, et kood töötab ootuspäraselt</li>
-                <li>Parandage koodimustreid</li>
-                <li>Kõrvaldage hirm muutuste ees</li>
+                <li><a id="textcolor">Reduce costs<br/></a></li>
+                <li><a id="textcolor">Make refactoring and rewriting easier and faster ("make it work" stages with red and green, then refactor to "make it right")<br/></a></li>
+                <li><a id="textcolor">Smooth project integration<br/></a></li>
+                <li><a id="textcolor">Avoid errors and binding<br/></a></li>
+                <li><a id="textcolor">Enhance overall team collaboration<br/></a></li>
+                <li><a id="textcolor">Increase confidence that code works as expected<br/></a></li>
+                <li><a id="textcolor">Improve code patterns<br/></a></li>
+                <li><a id="textcolor">Eliminate fear of changes<br/></a></li>
             </ul>
         </p>
-        <h2 class="text-xl">Continuous test-driven development</h2>
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Continuous test-driven development</h2>
         <p>
-            Pidev testipõhine arendus (CTDD) on tarkvaraarenduse tava, mis laiendab testipõhist arendust (TDD) taustal automaatse testimise abil, mida mõnikord nimetatakse pidevaks testimiseks.
+            <a id="textcolor">
+            Continuous Test-Driven Development (CTDD) is a software development practice that extends test-driven development (TDD) by incorporating continuous testing, sometimes referred to as continuous testing.
+            </a>
         </p>
-        <h2 class="text-xl">Specification by example</h2>
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Specification by example</h2>
         <p>
-            Specification by example ehk näidiste järgi spetsifikatsioon on koostööpõhine lähenemine tarkvaratoodete nõuete ja ärile suunatud funktsionaalsete testide määratlemiseks, mis põhineb nõuete hõivamisel ja illustreerimisel, kasutades abstraktsete väidete asemel realistlikke näiteid. Seda rakendatakse agiilsete tarkvaraarendusmeetodite kontekstis, eriti käitumispõhise arenduse kontekstis. See lähenemisviis on eriti edukas nõuete ja funktsionaalsete testide haldamisel suuremahulistes projektides, mille valdkond ja organisatsiooniline keerukus on oluline.
+            <a id="textcolor">
+
+            Specification by Example is a collaborative approach to defining software product requirements and business-focused functional tests based on capturing and illustrating requirements using realistic examples instead of abstract statements. It is applied in the context of agile software development methods, especially in the context of behavior-driven development. This approach is particularly successful in managing requirements and functional tests in large-scale projects where domain and organizational complexity is significant.
+            </a>
         </p>
-        <h2 class="text-xl">Data-driven development</h2>
-        <p>
-            Data-driven development ehk andmepõhine arendus on protsess, kus andmed on disaini- ja arendusotsuste peamiseks tõukejõuks. See on muutunud üha populaarsemaks tarkvara arendamise viisiks, kuna ettevõtted on mõistnud andmepõhise otsuste tegemise eeliseid. Selles blogipostituses defineerime andmepõhise arenduse, selgitame selle eeliseid ja anname näpunäiteid, kuidas sellest maksimumi võtta.
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Data-driven development</h2>
+        <p>            
+            <a id="textcolor">
+            Data-driven development is a process where data is the primary driving force behind design and development decisions. It has become an increasingly popular way of developing software as companies have realized the benefits of data-driven decision-making. In this blog post, we define data-driven development, explain its advantages, and provide tips on how to make the most of it.
+            </a>
         </p>
-        <h2 class="text-xl">Data-oriented design</h2>
+        <h2 id="whiteinline" style="color: #404040; font-family: 'Comic Sans MS';">Data-oriented design</h2>
         <p>
-            Data-oriented design ehk andmetele orienteeritud disain on tarkvara kujundamise lähenemisviis, mis keskendub andmete korraldamisele viisil, mis muudab nendele juurdepääsu ja nendega manipuleerimise lihtsaks. See põhineb ideel, et programmi põhirõhk peaksid olema andmetel, mitte nende andmetega tehtavatel toimingutel või teisendustel.
+            <a id="textcolor">
+            Data-oriented design is a software design approach that focuses on organizing data in a way that makes accessing and manipulating it easy. It is based on the idea that the primary focus of a program should be on data, rather than operations or transformations performed on that data.
+            </a>
         </p>
     </main>
 </body>
